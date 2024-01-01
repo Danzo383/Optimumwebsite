@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Optimum Fashion Website</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <header>
+           <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Optimum Fashion Beauty</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Input your Email so that we can send pictures of styles you will love:
+            </h1>
+
+            <form>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="button" class="button_1" value="Subscribe" onclick="submitForm()">
+            </form>
+        </div>
+    </section>
+
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <img src="./img/2.jpg" width="350px">
+                <h3>Gallery 1</h3>
+                <p>See this Lovely style 😍 😍 </p>
+            </div>
+
+            <div class="box">
+                <img src="./img/3.jpg" width="350px">
+                <h3>Gallery 2</h3>
+                <p>An Ankara sew in Optimum Fashion Beauty is a captivating fusion of vibrant hues and intricate patterns, embodying a rich cultural tapestry. It exudes elegance, celebrating the wearer's connection to tradition with a unique and fashionable flair. Each piece is a testament to craftsmanship, a versatile canvas for self-expression that effortlessly catches the eye and adds a touch of celebration to any occasion.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/4.jpg" width="350px">
+                <h3>Gallery 3</h3>
+                <p>The allure of an Ankara sew lies in its ability to weave together tradition and modernity, creating a fashion statement that is both timeless and cutting-edge.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/5.jpg" width="350px">
+                <h3>Gallery 4</h3>
+                <p>The bold and dynamic patterns of an Ankara sew radiate a sense of confidence and individuality, making it a go-to choice for those who want to express their personality through fashion.</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/6.jpg" width="350px">
+                <h3>Gallery 5</h3>
+                <p>Red Carpet Fashion  😍 😍</p>
+            </div>
+
+            <div class="box">
+                <img src="./img/7.jpg" width="350px">
+                <h3>Gallery 6</h3>
+                <p>Lovely 😍 😍 😍 </p>
+            </div>
+
+            <div class="box">
+                <img src="./img/8.jpg" width="350px">
+                <h3>Gallery 7</h3>
+                <p>An Ankara creation is not just clothing; it's a celebration of craftsmanship, a fusion of culture and creativity that transforms everyday attire into a visual symphony of style and pride.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Danzo Designs, Copyright &copy; 2023</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            var email = document.getElementById("email").value;
+            window.location.href = "mailto:adebanjodaniel13@gamail.com?subject=New%20Subscription&body=Email:%20" + email;
+        }
+    </script>
+</body>
+</html>

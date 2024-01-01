@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+           <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Optimum Fashion Beauty</h1>
+            </div>
+
+            <nav>
+                <ul>
+                    <li class="current"><a href="Index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="newsletter">
+        <div class="container">
+            <h1>Input your Email so that we can send pictures of styles you will love:
+            </h1>
+
+            <form id="subscriptionForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <input type="button" class="button_1" value="Subscribe" onclick="submitForm()">
+            </form>
+        </div>
+    </section>
+
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+                <h1 class="page-title">About Us</h1>
+                <p>Getting big or boom in this fashio
+                   industry may be daunting. It's an extremely competitive industry or I
+                    call it <b>world</b> where cool 
+                    creative designers have to work together to keep up with rapidly changing trends and a demanding audience who are spoilt for choice. That being said, fashion careers can be very tasking to any fashionista .The incentive behind those
+                    whose love for the fashion industry is only paralleled by their determination and dedication to leave their
+                    mark on it. I've been in this fashion industry for good four years now.
+                    
+                    <br><br>
+                    There may be some fashion environments that are brutal, but, you have to keep on moving don't stop, resilience has been my watch word since my first time in this industry, craving to become large some, but can't do it alone I need the support of customers/clients to patronize, so we can be big. You'll also be proud to have a big, great and famous fashion designer,(yes or no)?, Thanks
+                    <br>
+                    <b>OPTIMUM FASHION BEAUTY</b>
+                </p>
+            </article>
+
+            <aside id="sidebar">
+                <div class="blue">
+                    <h3>Contact</h3>
+                    <P>0708 906 8738
+
+                    <h3>Address</h3>
+                    31, Anuoluwapo Street, Somolu, Lagos 100007, Lagos Nigeria
+                    </P>
+                </div>
+            </aside>
+        </div>
+    </section>
+    
+    <footer>
+        <p>Danzo Designs, Copyright &copy; 2023</p>
+    </footer>
+
+    <script>
+        function submitForm() {
+            var email = document.getElementById("email").value;
+            window.location.href = "mailto:adebanjodaniel13@gamail.com?subject=New%20Subscription&body=Email:%20" + email;
+        }
+    </script>
+</body>
+</html>
